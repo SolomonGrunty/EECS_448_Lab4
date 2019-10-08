@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "storeStyle.css">
+	<script type = "text/javascript" src = "formValidator.js">
+	</script>
+</head>
+<body>
+<form action = "storeBackend.php" onsubmit = "return validateForm()" method = "post">
+Username:
+<input type="email" name="user"/>
+<br>Password:
+<input type="password" name="pass" minlength="1" required/>
+
+<section class = "box">
+	<div class = "column">
+		<h>Glorious Blessed Shirt $20.00</h><br>
+		<img src = https://i.rocdn.com/v2/2397263?w=1024&h=1024 />
+		<br>$100.00
+		<br>Quantity:
+		<input type = "number" min = 0 name = "shirt" />
+	</div>
+	<div class = "column">
+		<h>Holy Easter Island Head $420.00</h><br>
+		<img src = https://pbs.twimg.com/media/BgjBH3TCIAAjUDM.jpg />
+		<br>Quantity:
+		<input type = "number" min = 0 name = "eihead" />
+	</div>
+	<div class = "column">
+		<h>Mini-Cage $69.00</h><br>
+		<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7xBDq2L7ha0MnVGQ2ZFN9iP8yHdr2415xQgdFrRfrLdWMPqMz" />
+		<br>Quantity:
+		<input type = "number" min = 0 name = "minion" />
+	</div>
+</section>
+<h>Shipping</h>
+<p>
+	<input type="radio" name="ship" value="7 Day" id = "c1">Free 7 Day<br>
+	<input type="radio" name="ship" value="3 Day" id = "c2">$5.00 3 Day<br>
+	<input type="radio" name="ship" value="Overnight" id = "c3">$50.00 Overnight<br>
+</p>
+<input type="reset"><br>
+<input type="submit"><br>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+h {
+	font-size: 20px;
+	color: black;
+}
+p {
+	background-color: white;
+	color: black;
+}
+.column{
+	flex: 1;
+	border: 1px solid black;
+	margin: 3px;
+	padding 20px;
+	color: red;
+	background-color: green;
+}
+
+img {
+	padding: 5px;
+	width: 250px;
+	height: 250px;
+}
+
+body {
+	background-image: url(https://i.pinimg.com/736x/bc/06/bd/bc06bd20c3aa411daa61a53569a3e710.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
